@@ -55,4 +55,28 @@ public final class FeelPropertiesProvider extends BasePropertiesProvider {
                 '}';
     }
 
+	public String getInstance() {
+		return instance;
+	}
+
+	public void setInstance(String instance) {
+		this.instance = instance;
+	}
+
+	public String getLarProxyPort() {
+		return larProxyPort;
+	}
+
+	public void setLarProxyPort(String larProxyPort) {
+		this.larProxyPort = larProxyPort;
+	}
+
+	public String getThreadPoolSize() {
+		return threadPoolSize;
+	}
+
+	public void setThreadPoolSize(String threadPoolSize) {
+		this.threadPoolSize = threadPoolSize;
+	}
+
 }
