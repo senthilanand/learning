@@ -9,7 +9,6 @@ import com.paypal.infra.util.log.LoggerWrapper;
  * The writeTask is used by FeelServClientImpl to submit a write task to internal executor. It implemented CallableTask
  * interface. It invokes FeelServClientImpl's write method to perform actual write.
  *  
- * @author Java infra team, phan
  *
  */
 public class FeelServWriteTask extends BaseNamedTask implements CallableTask<Long> {

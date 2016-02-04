@@ -12,10 +12,8 @@ import com.paypal.infra.util.log.LoggerWrapper;
  * This is the java implementation of feel log service. Please see doc for IFeelService for usage info.
  * 
  * The internal of this implementation is to delegate most of work to FeelServClient class. This implementation could be instantiated through 
- * the method FeelServiceFactory.initFeelService(IConfigurationProvider<FeelPropertyDef> feelConfig).
+ * the method FeelServiceFactory.initFeelService(FeelPropertiesProvider feelConfig).
  * 
- * @author Java infra team. phan
- *
  */
 public class JavaFeelService implements IFeelService {
 

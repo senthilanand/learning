@@ -8,9 +8,6 @@ import com.paypal.infra.util.exception.ThrowableWrapper;
  * The base exception type thrown by the FeelClient. Clients can access a
  * {@link ThrowableWrapper} that will conveniently allow {@link FeelException}
  * s to be wrapped around other {@link Throwable}s.
- * 
- * @author <a href="mailto:cellis@paypal.com">Chad Ellis</a>
- * @version $Revision: $
  */
 public class FeelException extends RuntimeException {
 	private static final ThrowableWrapper<FeelException> THROWABLE_WRAPPER = new ThrowableWrapper<FeelException>(FeelException.class);

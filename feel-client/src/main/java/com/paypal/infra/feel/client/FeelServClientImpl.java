@@ -71,6 +71,7 @@ public class FeelServClientImpl implements FeelServClient {
         	//LarMsgHelper.writeAsLarRequest(entry, larClient);
         	calTrans.setStatus(CalStatusCode.TRANS_OK.getCode());
         }
+        //TODO
         /*catch (IOException ioe) {
         	calTrans.setStatus(ioe);
 			LOGGER.getLogger().log(LogLevel.ERROR, "Exception writing to LAR broker:", ioe);
@@ -114,6 +115,7 @@ public class FeelServClientImpl implements FeelServClient {
 		return localExecutor;
 	}
 
+	//TODO 
 	private TaskExecutor initExecutor() throws IOException {
 		BeanConfigCategoryInfo info = null;
 		if( (info = BeanConfigCategoryInfo.getBeanConfigCategoryInfo("feelservJavaClient")) == null) {

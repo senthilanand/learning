@@ -27,7 +27,7 @@ public class FeelServiceFactory {
 	}
 
 	/**
-	 * Initialize feelservice with feelConfigurationProvider as input
+	 * Initialize feelservice with FeelConfigurationProvider as input
 	 * 
 	 * @param feelConfig
 	 * @return void

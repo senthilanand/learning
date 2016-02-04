@@ -8,19 +8,11 @@ import java.util.Map;
  * Enumeration of error codes that can be returned from Feel on response to
  * api calls.
  *
- *
- * Values 0-20 are actual OperationStatus codes returned in the OperationMsg in
- * the Mayfly20 protocol.
- *
  * Values 100 + are client side only error codes
- *
- * @author <a href="mailto:cellis@paypal.com">Chad Ellis</a>
- * @version $Revision: $
  */
 public enum FeelOperationStatus {
 
 	// Client side only codes
-
 	/** 100 - Action failed and io error occurred */
 	FEEL_CLIENT_CONFIG_ERROR(100, "Configuration Error Occurred in the Java Feel Client."),
 

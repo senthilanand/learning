@@ -24,15 +24,21 @@
             <groupId>com.ebay.kernel</groupId>
             <artifactId>uKernel</artifactId>
         </dependency>
-          
+   
+ <!--          
 		<dependency>
             <groupId>com.paypal.usf</groupId>
             <artifactId>commons</artifactId>
-            <!--  inserted by senthilc -->
             <version>1.0.2-RELEASE</version>
             <scope>provided</scope>
+            
         </dependency>
-        
+ -->
+		<dependency>
+           <groupId>com.paypal.usf</groupId>
+           <artifactId>vo</artifactId>
+           <version>1.0.5-RELEASE</version>  
+        </dependency>   
         <dependency>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
