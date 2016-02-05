@@ -44,6 +44,7 @@ public final class FeelPropertiesProvider extends BasePropertiesProvider {
         this.instance = getStringProperty(FeelPropertiesKeyDefinition.instance, FeelPropertyDefaultValue.instance);
 		this.larProxyPort = getStringProperty(FeelPropertiesKeyDefinition.larProxyPort, FeelPropertyDefaultValue.larProxyPort);
 		this.threadPoolSize = getStringProperty(FeelPropertiesKeyDefinition.threadPoolSize, FeelPropertyDefaultValue.threadPoolSize);
+		toString();
 	}
 
     @Override
