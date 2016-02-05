@@ -4,7 +4,8 @@ package com.paypal.infra.feel;
  * Exception to represent a Client configuration error.
  */
 public final class FeelClientConfigException extends FeelException {
-	private static final long serialVersionUID = -2773624072814891564L;
+
+	private static final long serialVersionUID = 4721363746603972061L;
 
 	public FeelClientConfigException() {
 		super(FeelOperationStatus.FEEL_CLIENT_CONFIG_ERROR);

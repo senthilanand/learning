@@ -51,6 +51,7 @@ public class FeelServClientImpl implements FeelServClient {
 		}
 		getExecutor();
 		
+		//TODO
 		// Create lar client 
 		//Properties properties = new Properties();
 		//properties.put(LarPropertyDef.PORT.getKey(), feelConfigBeanProvider.getLarProxyPort());
@@ -68,6 +69,8 @@ public class FeelServClientImpl implements FeelServClient {
 		String correlationId = getCorrelationId();
 		calTrans.setCorrelationId(correlationId);
         try{
+        	
+        	System.out.println("SWALLOWING FEEL MESSAGE");
         	//LarMsgHelper.writeAsLarRequest(entry, larClient);
         	calTrans.setStatus(CalStatusCode.TRANS_OK.getCode());
         }

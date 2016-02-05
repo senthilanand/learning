@@ -14,8 +14,6 @@ public class FeelServiceFactoryTest {
 	private static IFeelService ifs = null;
 	@BeforeClass
 	public static void beforeClass() throws Exception{
-		//URL resource = JavaFeelServiceTest.class.getResource("/feelClient.properties");
-		//IConfigurationProvider<FeelPropertyDef> icp = new FeelPropertyProvider("feel", resource);
 		
 		Properties props = new Properties();
 		FeelPropertiesProvider provider = new FeelPropertiesProvider(props);
@@ -30,8 +28,6 @@ public class FeelServiceFactoryTest {
 		ifs.stop(1L);
 		FeelServiceFactory.reset();
 		AssertJUnit.assertFalse(FeelServiceFactory.isLoaded());
-		//ProtectedPropertiesProvider.getInstance().clearProtectedProperties();
-		//KeyStoreRegistry.getInstance().clear();
 	}
 	
 	@Test

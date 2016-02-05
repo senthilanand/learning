@@ -10,12 +10,13 @@ import com.paypal.infra.util.exception.ThrowableWrapper;
  * s to be wrapped around other {@link Throwable}s.
  */
 public class FeelException extends RuntimeException {
+
 	private static final ThrowableWrapper<FeelException> THROWABLE_WRAPPER = new ThrowableWrapper<FeelException>(FeelException.class);
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 8434646335093981801L;
+	private static final long serialVersionUID = -8438146622156870928L;
 
 	/**
 	 * {@link FeelOperationStatus}, for use by error mapper.

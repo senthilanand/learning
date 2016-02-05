@@ -25,15 +25,7 @@
             <artifactId>uKernel</artifactId>
         </dependency>
    
- <!--          
-		<dependency>
-            <groupId>com.paypal.usf</groupId>
-            <artifactId>commons</artifactId>
-            <version>1.0.2-RELEASE</version>
-            <scope>provided</scope>
-            
-        </dependency>
- -->
+
 		<dependency>
            <groupId>com.paypal.usf</groupId>
            <artifactId>vo</artifactId>

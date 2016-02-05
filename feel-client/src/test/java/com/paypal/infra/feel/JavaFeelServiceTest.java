@@ -17,13 +17,9 @@ public class JavaFeelServiceTest {
 	@BeforeClass
 	public static void beforeClass() throws Exception{
 		
-		//TODO 
-		//URL resource = JavaFeelServiceTest.class.getResource("/feelClient.properties");
-		
 		try {
 		Properties props = new Properties();
 		FeelPropertiesProvider provider = new FeelPropertiesProvider(props);
-		
 		
 		jfs = new JavaFeelService(provider);
 		AssertJUnit.assertTrue(jfs.start());
