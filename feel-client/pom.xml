@@ -58,6 +58,16 @@
             <artifactId>spring-test</artifactId>
             <scope>test</scope>
         </dependency>
+<dependency>
+  <groupId>com.paypal.interfaces</groupId>
+  <artifactId>FeelEvents-interface</artifactId>
+  <version>4.203.20094775</version>
+</dependency>
+<dependency>
+  <groupId>com.paypal.interfaces</groupId>
+  <artifactId>Asyn-interface</artifactId>
+  <version>4.203.20094775</version>
+</dependency>
     </dependencies>
 
     <build>

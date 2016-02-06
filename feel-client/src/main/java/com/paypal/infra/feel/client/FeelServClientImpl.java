@@ -15,8 +15,9 @@ import com.ebay.kernel.logger.LogLevel;
 import com.paypal.infra.feel.IFeelService;
 import com.paypal.infra.feel.config.FeelPropertiesProvider;
 import com.paypal.infra.feel.domain.IFeelLogEntry;
-import com.paypal.infra.util.log.LoggerWrapper;
 import com.paypal.infra.feel.util.CalStatusCode;
+import com.paypal.infra.lar.LarClientFactory;
+import com.paypal.infra.util.log.LoggerWrapper;
 
 /**
  * Implementation that writes entry to feelserv server. </p> Uses NetStringOutputStream
@@ -34,7 +35,7 @@ public class FeelServClientImpl implements FeelServClient {
 	
 	private final int threadPoolSize;
 	//TODO
-	//private final LarClient larClient;
+	private final LarClient larClient;
 		
 	/**
 	 * Construct a FeelServClientImpl 
@@ -53,10 +54,9 @@ public class FeelServClientImpl implements FeelServClient {
 		
 		//TODO
 		// Create lar client 
-		//Properties properties = new Properties();
+		Properties properties = new Properties();
 		//properties.put(LarPropertyDef.PORT.getKey(), feelConfigBeanProvider.getLarProxyPort());
-		//IConfigurationProvider<LarPropertyDef> config = new LarPropertyProvider("", properties);
-		//larClient = LarClientFactory.createLarClient(config);
+		larClient = LarClientFactory.createLarClient(feelConfig);
 	}
 
 	/**
