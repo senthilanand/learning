@@ -16,6 +16,7 @@ import com.paypal.infra.feel.IFeelService;
 import com.paypal.infra.feel.config.FeelPropertiesProvider;
 import com.paypal.infra.feel.domain.IFeelLogEntry;
 import com.paypal.infra.feel.util.CalStatusCode;
+import com.paypal.infra.lar.LarClient;
 import com.paypal.infra.lar.LarClientFactory;
 import com.paypal.infra.util.log.LoggerWrapper;
 
