@@ -19,6 +19,7 @@ import com.paypal.infra.feel.util.CalStatusCode;
 import com.paypal.infra.lar.LarClient;
 import com.paypal.infra.lar.LarClientFactory;
 import com.paypal.infra.util.log.LoggerWrapper;
+import com.paypal.infra.feel.util.LarMsgHelper;
 
 /**
  * Implementation that writes entry to feelserv server. </p> Uses NetStringOutputStream
@@ -72,15 +73,14 @@ public class FeelServClientImpl implements FeelServClient {
         try{
         	
         	System.out.println("SWALLOWING FEEL MESSAGE");
-        	//LarMsgHelper.writeAsLarRequest(entry, larClient);
+        	LarMsgHelper.writeAsLarRequest(entry, larClient);
         	calTrans.setStatus(CalStatusCode.TRANS_OK.getCode());
         }
-        //TODO
-        /*catch (IOException ioe) {
+        catch (IOException ioe) {
         	calTrans.setStatus(ioe);
 			LOGGER.getLogger().log(LogLevel.ERROR, "Exception writing to LAR broker:", ioe);
 			throw ioe;
-        } */
+        } 
         catch (Throwable th) {
 			calTrans.setStatus(th);
 			LOGGER.getLogger().log(LogLevel.ERROR, "Exception writing to LAR broker:", th);

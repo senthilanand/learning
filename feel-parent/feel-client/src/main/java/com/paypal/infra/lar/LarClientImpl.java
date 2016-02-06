@@ -64,8 +64,13 @@ final class LarClientImpl implements LarClient {
 	 * , ASFRequest<? extends ValueObject> asfRequestVO
 	 */
 	public void sendLARRequest(String eventName , ValueObject valueObj) {
+		
+		
 		if(valueObj == null)
 			throw new IllegalArgumentException("VO cannot be null");
+		
+		System.out.println("VO PRINT:"+valueObj.toString());
+		
 		if(eventName == null || eventName.trim().length() == 0)
 			throw new IllegalArgumentException("eventName cannot be null or empty string");
 		byte[] requestBytes = null;
